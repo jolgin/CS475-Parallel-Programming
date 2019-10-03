@@ -1,0 +1,2 @@
+g++ simd.cpp simd.p4.cpp -o prog -lm -fopenmp
+./prog >> project7simd.txt

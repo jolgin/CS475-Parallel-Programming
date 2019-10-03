@@ -1,0 +1,14 @@
+#!/bin/bash
+# number of threads:
+for t in 1 2 4 6 8 10 12 14 16
+do
+	echo NUMT = $t
+	# number of subdivisions:
+	for s in 10000 50000 100000 250000 500000 1000000
+	do
+		echo NUMTRIALS = $s
+		g++ -DNUMTRIALS=$s -DNUMT=$t project1.cpp -o prog -lm -fopenmp
+		./prog >> project1data.txt
+	done
+    echo -e >> project1data.txt
+done

@@ -1,0 +1,1 @@
+For convenience, I have provided the bash files that go with each program. There are 3 bash files: "multiply", "multandadd", and "multandreduction". You can type these in as commands to run my program with given global and local array sizes. The program will write the data to different files for each program.

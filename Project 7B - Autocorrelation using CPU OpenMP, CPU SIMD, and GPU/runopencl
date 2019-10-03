@@ -1,0 +1,2 @@
+g++ opencl.cpp -o prog /scratch/cuda-7.0/lib64/libOpenCL.so -lm -fopenmp
+./prog >> project7opencl.txt

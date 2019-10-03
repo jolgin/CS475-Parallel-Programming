@@ -1,0 +1,2 @@
+g++ openmp.cpp -o prog -lm -fopenmp
+./prog >> project7openmpdata.txt

@@ -1,0 +1,11 @@
+#!/bin/bash
+# size of arrays
+
+for t in 1000 10000 50000 100000 250000 500000 1000000 5000000 10000000 20000000
+do
+	echo ARRAYSIZE = $t
+	
+	g++ -DARRAYSIZE=$t project4.cpp simd.p4.o -o prog -lm -fopenmp
+	./prog >> project4data.txt
+	echo -e >> project4data.txt
+done
